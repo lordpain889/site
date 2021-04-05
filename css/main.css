@@ -16,6 +16,7 @@ body {
   font-family: Trebuchet MS, Helvetica;
 }
 
+
 header {
   width: 100%;
   padding: 10px 0.5% 0px 0.5%;
@@ -80,7 +81,6 @@ header #logo span {
   margin-right: 7%;
 }
 
-
 .fixed {
   z-index: 5000;
   background-color: #fff;
@@ -94,13 +94,15 @@ header.fixed #logo {
 .fixed #about a {color: #343434}
 .fixed #about a:hover {color: #7c7c7c}
 
+
 #top {
   width: 100%;
   background-image: url(https://cdn.serif.com/affinity/img/photo/home/0121/og-photo-200120210858.jpg);
   background-blend-mode: multiply;
-  background-color: #2e3a44;
+  background-color: #00b2ff;
   background-size: cover;
   text-align: center;
+  background-attachment: fixed;
   color: #fff;
 }
 
@@ -140,6 +142,7 @@ header.fixed #logo {
   color: #ccc;
 }
 
+
 #main {
   float: left;
   background-color: #f6f6f6;
@@ -178,13 +181,12 @@ header.fixed #logo {
 #main h2 {font-size: 3em}
 #main span {color: #a0a0a0}
 
-
 #overview {
   float: left;
-  background-image: url(https://lh3.googleusercontent.com/proxy/3s4JreB7LfSB7mGWzxQ7Nv2MNwOABFaSRLWe3h6AawSwOe6ebd22ktCoIUFVLgJ_And0Vvncg93aokeW3DnTBKSvxl_FvRonlmnMCrgD1AJx4zYn90g);
+  background-image: url(https://24tv.ua/resources/photos/news/1200x675_DIR/201709/864978.jpg?202007162850);
 
   background-blend-mode: multiply;
-  background-color: #403f40;
+  background-color: #f34ff3;
   background-size: cover;
   background-attachment: fixed;
 
@@ -240,7 +242,6 @@ header.fixed #logo {
   }
 }
 
-/* Блок с контактами */
 #contacts {
   width: 100%;
   float: left;
@@ -317,8 +318,6 @@ h1, h2, h3, h4, h5 {
   background-color: #c15443;
 }
 
-/* Вопросы и ответы */
-
 #faq {
   background-color: #fff;
   border-top: 2px dashed #e4e3e3;
@@ -358,7 +357,7 @@ h1, h2, h3, h4, h5 {
 }
 
 #faq p {
-  font-family: Arimo, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: #4a4a4a;
   font-size: 0.95em;
