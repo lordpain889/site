@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Чому я не робив домашнє завдання</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+       <span>classwork</span>
+    </div>
+    <div id="about">
+      <a href="#" title="Легше робити"onclick="slowScroll('#main')">Легше робити</a>
+      <a href="#" onclick="slowScroll('#overiew')" title="Чому HTML?">Чому HTML?</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="CSS">CSS</a>
+      <a href="#" onclick="slowScroll('#faq')" title="Відповіді на запитання">faq</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Понятно</h1>
+    <h3>Чел,вопросы?</h3>
+  </div>
+
+  <div id="main">
+   <div class="intro">
+      <h2>Це просто шоб виправити двійки</h2>
+      <span>Рандомий текст справа =)</span>
+    </div>
+    <div class="text">
+       <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sequi laborum dolorum assumenda illum, quisquam soluta officia voluptate explicabo deserunt debitis natus distinctio, nostrum, eos veritatis ex unde. Maxime iste tempora explicabo voluptatem dolor quam molestiae numquam quibusdam, aspernatur harum fugit, illo, sunt rerum inventore nostrum nobis obcaecati quae provident.</span>
+     </div>
+  </div>
+
+<div id="overiew">
+  <h2>Чому HTML? </h2>
+  <h4>Він легче</h4>
+
+  <div class="img">
+  <img src="https://lh3.googleusercontent.com/proxy/3s4JreB7LfSB7mGWzxQ7Nv2MNwOABFaSRLWe3h6AawSwOe6ebd22ktCoIUFVLgJ_And0Vvncg93aokeW3DnTBKSvxl_FvRonlmnMCrgD1AJx4zYn90g" alt="">
+  <span>Перший сайт кста)</span>
+</div>
+<div class="img">
+      <img src="https://lh3.googleusercontent.com/proxy/3s4JreB7LfSB7mGWzxQ7Nv2MNwOABFaSRLWe3h6AawSwOe6ebd22ktCoIUFVLgJ_And0Vvncg93aokeW3DnTBKSvxl_FvRonlmnMCrgD1AJx4zYn90g" alt="">
+      <span>шо,хто глэк?</span>
+    </div>
+  </div>
+
+  <div id="contacts">
+   <center><h5>CSS</h5></center>
+   <form id="form_input">
+     <label for="name">Ну да. <span>*</span></label><br>
+     <input type="text" placeholder="Хто ви?" name="name" id="name"><br>
+     <label for="email">Ваша почта <span>*</span></label><br>
+            <input type="email" placeholder="Ваш емейл" name="email" id="email"><br>
+            <label for="message">Шо?<span>*</span></label><br>
+            <textarea placeholder="Напишть шось" name="message" id="message"></textarea><br>
+            <div id="mess_send" class="btn">Отправить мне</div>
+    </form>
+   </div>
+
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html ,body').animate({
+        scrollTop: $(id).offset().top
+      }, 450);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+         $("header").removeClass("fixed");
+      else
+         $("header").attr("class","fixed");
+    });
+  </script>
+</body>
+</html>
